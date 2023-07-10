@@ -12,25 +12,21 @@
           class="block rounded-xl bg-neutral-100 border border-neutral-300 p-8 shadow-xl transition hover:border-neutral-500/10 hover:shadow-neutral-500/10"
           href="/apps"
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-10 w-10 text-neutral-800"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path d="M12 14l9-5-9-5-9 5 9 5z" />
-            <path
-              d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
-            />
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
-            />
-          </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-type"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><path d="M9 13v-1h6v1"/><path d="M11 18h2"/><path d="M12 12v6"/></svg>
   
+          <h2 class="mt-4 text-xl font-bold text-neutral-900">Product Description Generator</h2>
+  
+          <p class="mt-1 text-sm text-neutral-600">
+            Accepts product data to generate a product description with ease and accuracy. 
+          </p>
+        </a>
+
+        <a
+          class="block rounded-xl bg-neutral-100 border border-neutral-300 p-8 shadow-xl transition hover:border-neutral-500/10 hover:shadow-neutral-500/10"
+          href="/apps"
+        >
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search-code"><path d="m9 9-2 2 2 2"/><path d="m13 13 2-2-2-2"/><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+
           <h2 class="mt-4 text-xl font-bold text-neutral-900">Search Terms Suggestion </h2>
   
           <p class="mt-1 text-sm text-neutral-600">
@@ -39,5 +35,7 @@
         </a>
   
     </div>
+
+    
   </section>
   
