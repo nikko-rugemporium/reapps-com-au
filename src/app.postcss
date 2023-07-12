@@ -24,3 +24,15 @@ body {
 	font-family: 'Poppins Light';
 	src: url('/fonts/Poppins-Light.ttf');
 }
+
+
+.ProseMirror { color: inherit; }
+.ProseMirror-focused { outline:none !important; }
+
+
+.ProseMirror p.is-empty::before {
+  content: attr(data-placeholder);
+  float: left;
+  height: 0;
+  pointer-events: none;
+}
