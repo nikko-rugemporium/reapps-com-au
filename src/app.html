@@ -2,11 +2,17 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
+		<title>RE Apps by Rug Emporium</title>
 		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
 		<meta name="viewport" content="width=device-width" />
 		%sveltekit.head%
+
+		<link rel="preload" href="%sveltekit.assets%/fonts/Poppins-Light.ttf" as="font" type="font/ttf" crossorigin />
+		<link rel="preload" href="%sveltekit.assets%/fonts/Poppins-Regular.ttf" as="font" type="font/ttf" crossorigin />
+		<link rel="preload" href="%sveltekit.assets%/fonts/Poppins-Medium.ttf" as="font" type="font/ttf" crossorigin />
+		<link rel="preload" href="%sveltekit.assets%/fonts/Poppins-Bold.ttf" as="font" type="font/ttf" crossorigin />	
 	</head>
-	<body data-sveltekit-preload-data="hover">
+	<body data-sveltekit-preload-data="hover" data-theme="vintage">
 		<div style="display: contents">%sveltekit.body%</div>
 	</body>
 </html>
