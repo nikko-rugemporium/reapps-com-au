@@ -13,15 +13,11 @@
             editor = new Editor({
             editorProps: {
                   attributes: {
-                        class: 'description-box input variant-form-material block mt-10 h-56 p-3',
+                        class: 'description-box input border-b border-primary-200 variant-form-material block p-3 text-md ',
                   },
             },
             element: element,
-            extensions: [StarterKit,
-            Placeholder.configure({
-                  placeholder: 'Text description',
-                  emptyEditorClass: 'text-primary-400',
-            })],
+            extensions: [StarterKit],
             content: ``,
             onTransaction: () => {
             
@@ -33,4 +29,4 @@
    
     
 
-    <div bind:this={element} placeholder="Text description"></div>
+    <div bind:this={element}></div>

@@ -13,15 +13,11 @@
             editor = new Editor({
             editorProps: {
                   attributes: {
-                        class: 'description-box input variant-form-material block mt-10 h-32 p-3',
+                        class: 'extra-description-box input border-b border-primary-200 variant-form-material block p-3 text-md ',
                   },
             },
             element: element,
-            extensions: [StarterKit,
-            Placeholder.configure({
-                  placeholder: 'Extra description',
-                  emptyEditorClass: 'text-primary-400',
-            })],
+            extensions: [StarterKit],
             content: ``,
             onTransaction: () => {
             
