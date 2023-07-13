@@ -1,19 +1,69 @@
 
-<script>
+<script lang="ts">
   import Description from '$lib/description.svelte'
   import Extra from '$lib/extra-description.svelte'
+
+  import { flip } from 'svelte/animate'
+  import { dndzone } from 'svelte-dnd-action'
+
+  const flipDurationMs = 100;
+
+  interface ListItem {
+    id: number
+    value: string
+  }
+
+  let items: ListItem[] = [
+    {
+      id:1,
+      value: "Feature, Value"
+    },
+    {
+      id:2,
+      value: "Feature, Value"
+    }
+  ]
+
+  const handleConsider = (evt : CustomEvent<DndEvent<ListItem>>) => {
+    console.log("consider")
+    items = evt.detail.items;
+  }
+
+  const handleFinalize = (evt : CustomEvent<DndEvent<ListItem>>) => {
+    console.log("finalize")
+    items = evt.detail.items;
+  }
 </script>
 
-<section>
-      <div class="mx-auto max-w-screen-xl px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8 flex flex-col gap-10" >
+<section class="flex flex-wrap">
 
-          <div class="mx-auto text-center">
-            <h1 class="text-3xl font-bold lg:text-4xl">Product Description Generator</h1>
-          </div>
+      <div class="mx-auto max-w-screen-xl px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8 flex flex-col gap-10 w-full" >
+        <div class="mx-auto text-center w-full">
+          <h1 class="text-3xl font-bold lg:text-4xl">Product Description Generator</h1>
+        </div>
+      </div>
+
+      <div class="mx-auto max-w-screen-xl px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8 flex flex-col gap-10 flex-1" >
 
           <input type="text" class="input variant-form-material placeholder:text-primary-400" placeholder="Product name"/>
 
           <Description />
+
+          <div class="feature-list" 
+          use:dndzone="{{ items: items, flipDurationMs: flipDurationMs, dropTargetStyle:{} }}"
+          on:consider="{handleConsider}"
+          on:finalize="{handleFinalize}"
+          >
+
+            {#each items as item (item.id)}
+              <div class="card card-hover w-96 my-4" animate:flip="{{ duration:flipDurationMs }}">
+                <header class="card-header">
+                  <span>{ item.value }</span>
+                </header>
+              </div>
+            {/each}
+
+          </div>
 
           <div class="space-y-2 mt-10">
             <label class="flex items-center space-x-2">
@@ -35,5 +85,6 @@
             <span>Generate</span>
           </button>
       </div>
+      <div class="flex-1"></div>
 </section>
     
