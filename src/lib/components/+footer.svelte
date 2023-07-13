@@ -1,8 +1,8 @@
-<footer aria-label="Site Footer" class="footer-wrapper p-4 sm:ml-64 bg-white">
+<footer aria-label="Site Footer" class="footer-wrapper p-4 sm:ml-64">
     <div class="max-w-screen px-4 pt-5 pb-8 mx-auto ">
   
       <div
-        class="pt-8 mt-16 border-t border-neutral-100 sm:flex sm:items-center sm:justify-between lg:mt-5"
+        class="pt-8 mt-16 border-t border-primary-50 sm:flex sm:items-center sm:justify-between lg:mt-5"
       >
         <nav aria-label="Footer Navigation - Support">
           <ul class="flex flex-wrap justify-center gap-4 text-xs lg:justify-end">
