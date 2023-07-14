@@ -185,7 +185,7 @@
       <div class="flex-1 flex flex-col gap-5 w-full md:w-1/2 mt-10 md:mt-0">
 
         <div class="">
-          <textarea class="finalCodeText w-full h-32 re-description bg-primary-50 border border-primary-50 p-6 rounded-xl" disabled>{finalCode}</textarea>
+          <textarea class="finalCodeText w-full h-32 re-description bg-primary-50 border border-primary-50 p-6 rounded-xl" disabled placeholder="Note: Fill up the input boxes and click on the generate button.">{finalCode}</textarea>
         </div>
 
         <div class="h-1/2">
