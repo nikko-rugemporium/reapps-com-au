@@ -91,7 +91,12 @@
   `;
   }
 
- 
+  const copyCode = () => {
+    const el = document.querySelector(".finalCodeText") as HTMLInputElement;
+    el.select();
+    el.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText(el.value);
+  }
   
 </script>
 
@@ -180,11 +185,11 @@
       <div class="flex-1 flex flex-col gap-5 w-full md:w-1/2 mt-10 md:mt-0">
 
         <div class="">
-          <textarea class="finalCodeText w-full h-32 re-description bg-primary-50 border border-primary-50 p-6 rounded-xl" disabled >{finalCode}</textarea>
+          <textarea class="finalCodeText w-full h-32 re-description bg-primary-50 border border-primary-50 p-6 rounded-xl" disabled>{finalCode}</textarea>
         </div>
 
         <div class="h-1/2">
-          <button type="button" class="btn variant-filled-primary">
+          <button type="button" class="btn variant-filled-primary" on:click={copyCode}>
             <span>
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-code-2"><path d="M4 22h14a2 2 0 0 0 2-2V7.5L14.5 2H6a2 2 0 0 0-2 2v4"/><polyline points="14 2 14 8 20 8"/><path d="m9 18 3-3-3-3"/><path d="m5 12-3 3 3 3"/></svg>
             </span>
