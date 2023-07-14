@@ -12,7 +12,7 @@ export function initializeEditor(element: HTMLElement, index: number) {
   editor = new Editor({
     editorProps: {
       attributes: {
-        class: 'description-box input border-b border-primary-200 variant-form-material block p-3 text-md',
+        class: 'description-box input border-b border-primary-200 variant-form-material block p-3 text-md cursor-text',
       },
     },
     element: element,
