@@ -11,7 +11,7 @@ import Sidebar from '../lib/components/+sidebar.svelte';
 
 <Sidebar />
 <main class="p-4 sm:ml-64">
-	<div class="p-2">
+	<div class="container mx-auto p-2">
 		<slot />
 	</div>
 </main>
