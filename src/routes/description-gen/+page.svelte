@@ -110,7 +110,7 @@
         </div>
       </div>
 
-      <div class="mx-auto max-w-screen-xl px-4 py-2 sm:py-4 sm:px-6 lg:py-4 lg:px-8 flex flex-col gap-6 w-full md:w-1/2 " >
+      <div class="mx-auto max-w-screen-xl px-4 py-2 sm:py-4 sm:px-6 lg:py-4 lg:px-8 flex flex-col gap-6 w-full md:w-3/5 " >
 
           <label for="" class="label">
             <span class="block font-medium">Product name</span>
@@ -158,7 +158,7 @@
       </div>
 
 
-      <div class="flex-1 flex flex-col gap-5 w-full md:w-1/2 mt-10 md:mt-0">
+      <div class="flex-1 flex flex-col gap-5 w-full md:w-2/5 mt-10 md:mt-0">
 
         <div class="space-y-2 my-2 text-md text-primary-500">
           <label class="flex items-center space-x-2">
