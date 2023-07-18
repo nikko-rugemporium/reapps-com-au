@@ -1,4 +1,4 @@
-<footer aria-label="Site Footer" class="footer-wrapper p-4 sm:ml-64">
+<footer aria-label="Site Footer" class="footer-wrapper p-4">
     <div class="max-w-screen px-4 pt-5 pb-8 mx-auto ">
   
       <div

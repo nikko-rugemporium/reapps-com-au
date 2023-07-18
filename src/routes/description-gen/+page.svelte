@@ -136,7 +136,7 @@
         </div>
       </div>
 
-      <div class="mx-auto max-w-screen-xl px-4 py-2 sm:py-4 sm:px-6 lg:py-4 lg:px-8 flex flex-col gap-6 w-full md:w-3/5 " >
+      <div class="mx-auto max-w-screen-xl px-4 py-2 sm:py-4 sm:px-6 lg:py-4 lg:px-8 flex flex-col gap-6 w-full lg:w-3/5 " >
 
           <label for="" class="label">
             <span class="block font-medium">Product name</span>
@@ -184,7 +184,7 @@
       </div>
 
 
-      <div class="flex-1 flex flex-col gap-5 w-full md:w-2/5 mt-10 md:mt-0">
+      <div class="flex-1 flex flex-col gap-5 w-full lg:w-2/5 mt-10 md:mt-0">
 
         <div class="space-y-2 my-2 text-md text-primary-500">
           <label class="flex items-center space-x-2">
@@ -210,12 +210,12 @@
           <span>Generate</span>
         </button>
 
-        <div class="">
-          <textarea class="finalCodeText w-full h-32 re-description bg-primary-50 border border-primary-50 p-6 rounded-xl" disabled placeholder="Note: Fill up the input boxes and click on the generate button.">{finalCode}</textarea>
+        <div>
+          <textarea class="finalCodeText w-full h-32 re-description bg-surface-50 text-primary-300 border border-primary-50 p-6 rounded-xl" disabled placeholder="Note: Fill up the input boxes and click on the generate button.">{finalCode}</textarea>
         </div>
 
         <div class="h-1/2">
-          <button type="button" class="btn variant-filled-primary" on:click={copyCode}>
+          <button type="button" class="btn btn-lg variant-soft-success w-full" on:click={copyCode}>
             <span>
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
             </span>

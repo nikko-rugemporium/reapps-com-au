@@ -9,10 +9,16 @@ import Sidebar from '../lib/components/+sidebar.svelte';
 </script>
 
 
-<Sidebar />
-<main class="p-4 sm:ml-64">
-	<div class="p-2">
-		<slot />
+<div class="wrapper flex flex-wrap">
+	<div class="sideBarWrap h-fit w-full md:w-2/6 lg:w-1/6">
+		<Sidebar />
 	</div>
-</main>
-<Footer />
+	<main class="p-4 h-fit w-full md:w-4/6 lg:w-5/6">
+		<div class="p-2">
+			<slot />
+		</div>
+	</main>
+	<div class="footerWrap w-full">
+		<Footer />
+	</div>
+</div>
