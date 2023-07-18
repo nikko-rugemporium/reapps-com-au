@@ -91,10 +91,36 @@
 
   const copyCode = () => {
     const el = document.querySelector(".finalCodeText") as HTMLInputElement;
-    el.select();
-    el.setSelectionRange(0, 99999);
-    navigator.clipboard.writeText(el.value);
-  }
+    const text = el?.value ?? '';
+
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text)
+        .then(() => {
+          console.log('Text copied to clipboard');
+        })
+        .catch((error) => {
+          console.log('Error copying text to clipboard:', error);
+        });
+    } else {
+      // Fallback solution for mobile devices
+      const textArea = document.createElement('textarea');
+      textArea.value = text;
+      textArea.style.position = 'fixed'; // Make it invisible but still selectable
+      document.body.appendChild(textArea);
+      textArea.focus();
+      textArea.select();
+
+      try {
+        const successful = document.execCommand('copy');
+        const message = successful ? 'Text copied to clipboard' : 'Unable to copy text';
+        console.log(message);
+      } catch (error) {
+        console.log('Error copying text:', error);
+      }
+
+      document.body.removeChild(textArea);
+    }
+  };
 
   onMount(() => {
     initializeEditor(descriptionBox,0); 
@@ -131,7 +157,7 @@
             {#each items as item (item.id)}
               <div class="card card-hover my-4 flex gap-2 items-center justify-evenly p-2 text-md " animate:flip="{{ duration:flipDurationMs }}" >
                 <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-grip-vertical text-primary-500"><circle cx="9" cy="12" r="1"/><circle cx="9" cy="5" r="1"/><circle cx="9" cy="19" r="1"/><circle cx="15" cy="12" r="1"/><circle cx="15" cy="5" r="1"/><circle cx="15" cy="19" r="1"/></svg>
-                <div class="input-forms flex gap-2 ml-2">
+                <div class="input-forms flex flex-col md:flex-row gap-2 ml-2">
                   <div class="input-group h-10 border border-primary-50 input-group-divider grid-cols-[auto_1fr_auto] ">
                     <div class="input-group-shim text-primary-300">Feature</div>
                     <input type="text" placeholder=""  bind:value={item.feature} />
