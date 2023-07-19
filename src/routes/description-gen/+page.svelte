@@ -58,6 +58,10 @@
     return lastId;
   }
 
+  function clearData() {
+    location.reload();
+  }
+
   function addItem() {
     const newItem = {
       id: generateNewId(),
@@ -230,20 +234,29 @@
           <span>Generate</span>
         </button>
 
+        <button type="button" class="btn btn-lg variant-soft-success w-full" on:click={copyCode} use:popup={popupFeatured}>
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+          </span>
+          <span>Copy code</span>
+        </button>
+        <div class="card p-4 w-48 text-center shadow-xl" data-popup="popupFeatured">
+          <div><p>Copy Success!</p></div>
+        </div>
+
         <div>
           <textarea class="finalCodeText w-full h-32 re-description bg-surface-50 text-primary-300 border border-primary-50 p-6 rounded-xl" disabled placeholder="Note: Fill up the input boxes and click on the generate button.">{finalCode}</textarea>
         </div>
+        
 
         <div class="h-1/2">
-          <button type="button" class="btn btn-lg variant-soft-success w-full" on:click={copyCode} use:popup={popupFeatured}>
+
+          <button type="button" class="btn btn-lg variant-soft-primary w-full mt-4" on:click={clearData}>
             <span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eraser"><path d="m7 21-4.3-4.3c-1-1-1-2.5 0-3.4l9.6-9.6c1-1 2.5-1 3.4 0l5.6 5.6c1 1 1 2.5 0 3.4L13 21"/><path d="M22 21H7"/><path d="m5 11 9 9"/></svg>
             </span>
-            <span>Copy code</span>
+            <span>Clear Data</span>
           </button>
-          <div class="card p-4 w-48 text-center shadow-xl" data-popup="popupFeatured">
-            <div><p>Copy Success!</p></div>
-          </div>
         </div>
       </div>
 </section>
