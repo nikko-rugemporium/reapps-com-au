@@ -23,7 +23,7 @@
                         <img class="max-w-[100px] rounded-full" src="{ Placeholder }" alt="Name">
                         <span class="font-bold text-sm" >Name</span>  
                   </header> 
-                  <div class="p-4 space-y-4 w-3/4">
+                  <div class="p-4 space-y-4 w-full md:w-3/4">
                         <article>
                               <p class="text-sm leading-relaxed">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae massa pellentesque augue tincidunt tempor in ac lectus. Nam vitae tortor volutpat enim auctor interdum. Interdum et malesuada fames ac ante ipsum primis in faucibus.
@@ -40,7 +40,7 @@
                         <img class="max-w-[100px] rounded-full" src="{ Placeholder }" alt="Name">
                         <span class="font-bold text-sm" >Name</span>  
                   </header> 
-                  <div class="p-4 space-y-4 w-3/4">
+                  <div class="p-4 space-y-4 w-full md:w-3/4">
                         <article>
                               <p class="text-sm leading-relaxed">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae massa pellentesque augue tincidunt tempor in ac lectus. Nam vitae tortor volutpat enim auctor interdum. Interdum et malesuada fames ac ante ipsum primis in faucibus.
@@ -57,7 +57,7 @@
                         <img class="max-w-[100px] rounded-full" src="{ Placeholder }" alt="Name">
                         <span class="font-bold text-sm" >Name</span>  
                   </header> 
-                  <div class="p-4 space-y-4 w-3/4">
+                  <div class="p-4 space-y-4 w-full md:w-3/4">
                         <article>
                               <p class="text-sm leading-relaxed">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae massa pellentesque augue tincidunt tempor in ac lectus. Nam vitae tortor volutpat enim auctor interdum. Interdum et malesuada fames ac ante ipsum primis in faucibus.
@@ -74,7 +74,7 @@
                         <img class="max-w-[100px] rounded-full" src="{ Placeholder }" alt="Name">
                         <span class="font-bold text-sm" >Name</span>  
                   </header> 
-                  <div class="p-4 space-y-4 w-3/4">
+                  <div class="p-4 space-y-4 w-full md:w-3/4">
                         <article>
                               <p class="text-sm leading-relaxed">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae massa pellentesque augue tincidunt tempor in ac lectus. Nam vitae tortor volutpat enim auctor interdum. Interdum et malesuada fames ac ante ipsum primis in faucibus.
@@ -91,7 +91,7 @@
                         <img class="max-w-[100px] rounded-full" src="{ Placeholder }" alt="Name">
                         <span class="font-bold text-sm" >Name</span>  
                   </header> 
-                  <div class="p-4 space-y-4 w-3/4">
+                  <div class="p-4 space-y-4 w-full md:w-3/4">
                         <article>
                               <p class="text-sm leading-relaxed">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae massa pellentesque augue tincidunt tempor in ac lectus. Nam vitae tortor volutpat enim auctor interdum. Interdum et malesuada fames ac ante ipsum primis in faucibus.
@@ -108,7 +108,7 @@
                         <img class="max-w-[100px] rounded-full" src="{ Nikko }" alt="Nikko">
                         <span class="font-bold text-sm" >Nikko Parin</span>  
                   </header> 
-                  <div class="p-4 space-y-4 w-3/4">
+                  <div class="p-4 space-y-4 w-full md:w-3/4">
                         <article>
                               <p class="text-sm leading-relaxed">
                               As a passionate learner, I thrive on expanding my knowledge and skills, particularly in the realms of web development and design. When I'm not immersed in my work, you can find me indulging in my love for PC gaming, with games like Valorant.
