@@ -72,7 +72,7 @@
   
           <li>
             <a
-              href="/"
+              href="https://github.com/nikko-rugemporium/reapps-com-au"
               rel="noreferrer"
               target="_blank"
               class="text-neutral-700 transition hover:opacity-75"
