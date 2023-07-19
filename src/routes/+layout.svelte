@@ -5,7 +5,11 @@ import '../app.postcss';
 
 import Footer from '../lib/components/+footer.svelte';
 import Sidebar from '../lib/components/+sidebar.svelte';
-						
+
+import { computePosition, autoUpdate, offset, shift, flip, arrow } from '@floating-ui/dom';
+import { storePopup } from '@skeletonlabs/skeleton';
+storePopup.set({ computePosition, autoUpdate, offset, shift, flip, arrow });
+		
 </script>
 
 

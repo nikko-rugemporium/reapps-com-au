@@ -7,6 +7,18 @@
   import { writable } from "svelte/store";
   import { initializeEditor, descriptionContent,extraDescriptionContent } from "./page";
 
+  import { popup } from '@skeletonlabs/skeleton';
+  import type { PopupSettings } from '@skeletonlabs/skeleton';
+
+  const popupFeatured: PopupSettings = {
+    // Represents the type of event that opens/closed the popup
+    event: 'click',
+    // Matches the data-popup value on your popup element
+    target: 'popupFeatured',
+    // Defines which side of your trigger the popup will appear
+    placement: 'bottom',
+  };
+
   const flipDurationMs = 100;
 
   interface ListItem {
@@ -215,12 +227,15 @@
         </div>
 
         <div class="h-1/2">
-          <button type="button" class="btn btn-lg variant-soft-success w-full" on:click={copyCode}>
+          <button type="button" class="btn btn-lg variant-soft-success w-full" on:click={copyCode} use:popup={popupFeatured}>
             <span>
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
             </span>
             <span>Copy code</span>
           </button>
+          <div class="card p-4 w-48 text-center shadow-xl" data-popup="popupFeatured">
+            <div><p>Copy Success!</p></div>
+          </div>
         </div>
       </div>
 </section>
