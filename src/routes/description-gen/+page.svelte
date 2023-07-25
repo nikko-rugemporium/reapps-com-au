@@ -30,22 +30,22 @@
   let items: ListItem[] = [
     {
       id:1,
-      feature: "",
+      feature: "Material",
       value: ""
     },
     {
       id:2,
-      feature: "",
+      feature: "Pile Height",
       value: ""
     },
     {
       id:3,
-      feature: "",
+      feature: "Construction",
       value: ""
     },
     {
       id:4,
-      feature: "",
+      feature: "Origin",
       value: ""
     }
   ]
